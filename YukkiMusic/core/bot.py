@@ -10,7 +10,6 @@
 import sys
 
 from pyrogram import Client
-from pyrogram.types import BotCommand
 
 import config
 
@@ -41,24 +40,6 @@ class YukkiBot(Client):
                 "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
             )
             sys.exit()
-        if config.SET_CMDS == str(True):
-            try:
-                await self.set_bot_commands(
-                    [
-                        BotCommand("ping", "لقياس بنك البوت"),
-                        BotCommand("play", "لتشغيل اغنية في المحادثة"),
-                        BotCommand("skip", "لتخطي الاغنية الحالية"),
-                        BotCommand("mute", "لكتم الاغنية"),
-                        BotCommand("unmute", "لإلغاء كتم الاغنية"),
-                        BotCommand("stop", "لإيقاف الاغنية"),
-                        BotCommand("sudolist", "لطلب مساعدة المطور."),
-                        BotCommand("settings", "لعرض الإعدادات الخاصة بهذه المجموعة.")
-                        ]
-                    )
-            except:
-                pass
-        else:
-            pass
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
