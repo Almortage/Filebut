@@ -377,7 +377,7 @@ async def get_dev_about(app,m):
      ]]
    )
    if get.bio:
-     text += f'• Bio -» {get.bio}'
+     text += f'• Bio •» {get.bio}'
    if get.photo:
      async for photo in app.iter_chat_photos(id, limit=1):
        await m.reply_photo(photo.file_id, caption=text, reply_markup=reply_markup,quote=True)
