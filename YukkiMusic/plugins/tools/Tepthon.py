@@ -36,7 +36,7 @@ async def ahtek(client: Client, message: Message):
     await m_reply_text("")
 
 
-@app.on_message(filters.command("","المطور"))
+@app.on_message(filters.command("","بوت"))
 def vgdg(client,message):
         message.reply_text(
             f"""✧ Welcome Baby,
@@ -366,3 +366,22 @@ async def dowhmo(client: Client, message: Message):
         ),
         disable_web_page_preview=True
     )
+@app.on_message(filters.regex("^المطور$"), group=5)
+async def get_dev_about(app,m):
+   id = 
+   get = await app.get_chat(id)
+   text = f'• Name -» [{get.first_name}](tg://user?id={get.id})\n'
+   reply_markup= InlineKeyboardMarkup (
+     [[
+       InlineKeyboardButton (get.first_name, user_id=get.id)
+     ]]
+   )
+   if get.bio:
+     text += f'• Bio -» {get.bio}'
+   if get.photo:
+     async for photo in app.iter_chat_photos(id, limit=1):
+       await m.reply_photo(photo.file_id, caption=text, reply_markup=reply_markup,quote=True)
+   
+   else:
+     await m.reply(text, quote=True, disable_web_page_preview=True,
+     reply_markup=reply_markup)
