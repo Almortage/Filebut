@@ -368,7 +368,7 @@ async def dowhmo(client: Client, message: Message):
     )
 @app.on_message(filters.regex("^المطور$"), group=5)
 async def get_dev_about(app,m):
-   id = 
+   id = 1260465030
    get = await app.get_chat(id)
    text = f'• Name -» [{get.first_name}](tg://user?id={get.id})\n'
    reply_markup= InlineKeyboardMarkup (
