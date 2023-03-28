@@ -1,99 +1,140 @@
 {
-    "الاسم" : " Yukki Music Bot " ،
-    "description" : " برنامج Telegram Group Calls المتدفق مع بعض الميزات ، مكتوب بلغة Python مع Pyrogram و Py-Tgcalls. دعم منصات مثل Youtube و Spotify و Resso و AppleMusic و Soundcloud و M3u8 Links. " ،
-    "الشعار" : " https://telegra.ph/file/c0e014ff34f34d1056627.png " ،
-    "الكلمات الرئيسية" : [
-    " python3 " ،
-    " برقية " ،
-    " بوت " ،
-    " يوكي " ،
-    " YukkiMusicBot " ،
-    " telegram-bot " ،
-    " بيروجرام "
-    ] ،
-    "المكدس" : " الحاوية " ،
-    "البيئة" : {
-      "API_ID" : {
-        "الوصف" : " احصل على هذه القيمة من https://my.telegram.org " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "API_HASH" : {
-        "الوصف" : " احصل على هذه القيمة من https://my.telegram.org " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "AUTO_LEAVING_ASSISTANT" : {
-        "description" : " إذا كنت تريد أن يغادر مساعدك جميع الدردشات تلقائيًا بعد مرور بعض الوقت. " ،
-        "القيمة" : " صواب " ،
-        "مطلوب" : خطأ
-      } ،
-      "BOT_TOKEN" : {
-        "description" : " A Bot's token from Botfather " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      MONGO_DB_URI : {
-        "description" : " احصل على عنوان url mongodb من https://cloud.mongodb.com. يمكنك تركه فارغًا إذا أردت ، سيستخدم قاعدة بيانات Yukki نيابة عنك. " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "MUSIC_BOT_NAME" : {
-        "description" : " اسم برنامج Music Bot الخاص بك. يُرجى عدم استخدام أحرف ascii " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "OWNER_ID" : {
-        "الوصف" : " معرف (معرفات) المستخدم (المستخدمين) الذي ترغب في إضافته كمالك. يجب فصل القيم المتعددة بمسافة. " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "STRING_SESSION" : {
-        "description" : " جلسة سلسلة Pyrogram. مساعد واحد إلزامي. " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "HEROKU_API_KEY" : {
-        "الوصف" : " مفتاح واجهة برمجة تطبيقات حساب Heroku الخاص بك " ،
-        "القيمة" : " " ،
-        "مطلوب" : خطأ
-      } ،
-      "HEROKU_APP_NAME" : {
-        "الوصف" : " اسم برنامج / تطبيق heroku الخاص بك " ،
-        "القيمة" : " " ،
-        "مطلوب" : خطأ
-      } ،
-      "LOG_GROUP_ID" : {
-        "description" : " معرف مجموعة السجل الخاص بك ، أضف الروبوت الخاص بك وقم بالترقية كمسؤول يتمتع بكامل الحقوق !. استخدم المجموعة فقط. من فضلك لا تستخدم معرف القناة. " ،
-        "القيمة" : " " ،
-        "مطلوب" : صحيح
-      } ،
-      "UPSTREAM_REPO" : {
-        "الوصف" : " إذا كنت لا تعرف هذا ، فاتركه كما هو " ،
-        "القيمة" : " https://github.com/tepthonsource/Rsex " ،
-        "مطلوب" : صحيح
-      } ،
-      "UPSTREAM_BRANCH" : {
-        "الوصف" : " اسم فرع Upstream Repo's " ،
-        "القيمة" : " رئيسي " ،
-        "مطلوب" : صحيح
+    "name": "VAMBIR/MUSIC",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/e70a5c7bbce858cee91ac.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Yukki",
+    "YukkiMusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "حط هنا الايبي ايدي",
+        "value": "10729094",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "حط هنا الايبي هاش",
+        "value": "038b0b405782d91cbb32f60e917c1c6e",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "حط هنا توكن بوتك .",
+        "value": "",
+        "required": true
+      },
+      "GIT_TOKEN": {
+        "description": "حط هنا توكن بوتك .",
+        "value": "",
+        "required": true
+      },  
+      "BOT_USERNAME": {
+        "description": "حط هنا يوزر البوت بدون @ ينجم .",
+        "value": "VPllllllbot",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "حط هنا كود المونجو .",
+        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "حط اسم البوت انجلش كابيتال زيي - VAMBIR.",
+        "value": "VAMBIR",
+        "required": true
+      },
+      "NAME_BOT": {
+        "description": "حط اسم البوت ب العربي زي فمبير .",
+        "value": "فمبير",
+        "required": true
+      },
+      "OWNER": {
+        "description": "حط هنا يوزر المطور منغير علامه @ .",
+        "value": "XxlllllllllllllllllllllllllllxX",
+        "required": true
+      },
+      "OWNER_USER": {
+        "description": "حط هنا يوزر المطور بعلامه @ .",
+        "value": "@XxlllllllllllllllllllllllllllxX",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "حط هنا ايدي المطور ينجم .",
+        "value": "2093265110",
+        "required": true
+      },
+      "IMG_DEV1": {
+        "description": "حط لينك صورة المطور ينجم .",
+        "value": "https://telegra.ph/file/e70a5c7bbce858cee91ac.jpg",
+        "required": true
+      },
+      "IMG_BOT1": {
+        "description": "حط لينك صورة البوت ينجم .",
+        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "حط كود الجلسه هنا .",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "حط اول اسم كتبتوو فوق",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "حط ايدي جروب البوتات وارفع البوت والحساب المساعد مشرف الاول .",
+        "value": "-1001615880226",
+        "required": true
+      },
+      "START_IMG_URL": {
+        "description": "Telegraph Image URL For Start Command",
+        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "required": true
+      },      
+      "UPSTREAM_REPO": {
+        "description": "سيبها زي مهيا .",
+        "value": "https://github.com/VamBIR/end",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
       }
-    } ،
-    "حزم بناء" : [
+    },
+    "buildpacks": [
           {
-              "url" : " heroku / python "
-          } ،
+              "url": "heroku/python"
+          },
           {
-              "url" : " heroku / nodejs "
-          } ،
+              "url": "heroku/nodejs"
+          },
           {
-              "url" : " https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git "
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
-      ] ،
-      "تشكيل" : {
-          "عامل" : {
-              "عدد كبير" : 1 ،
-              "الحجم" : " ايكو "
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
           }
-      }
+      },
+      "stack": "container"
   }
