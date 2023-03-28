@@ -1,99 +1,99 @@
 {
-    "name": "𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/6b5f18c07143327344dd2.jpg",
-    "keywords": [
-    "python3",
-    "telegram",
-    "bot",
-    "AVATAR",
-    "AVATARMUSIC",
-    "telegram-bot",
-    "pyrogram"
-    ],
-    "stack": "container",
-    "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
-        "required": false
-      },
-      "BOT_TOKEN""توكين البوت": {
-        "description": "A Bot's token from Botfather",
-        "value": "",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "",
-        "required": true
-      },
-      "MUSIC_BOT_NAME""اسم البوت": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "",
-        "required": true
-      },
-      "OWNER_ID""ايدي مالك البوت": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
-        "required": true
-      },
-      "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
-        "required": true
-      },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku account s API key احصل عليه من هنا https://dashboard.heroku.com/account",
-        "value": "",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
-        "value": "",
-        "required": false
-      },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
-        "required": true
-      },
-      "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Almortage/Filebut",
-        "required": true
-      },
-      "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
-        "value": "master",
-        "required": true
+    "الاسم" : " Yukki Music Bot " ،
+    "description" : " برنامج Telegram Group Calls المتدفق مع بعض الميزات ، مكتوب بلغة Python مع Pyrogram و Py-Tgcalls. دعم منصات مثل Youtube و Spotify و Resso و AppleMusic و Soundcloud و M3u8 Links. " ،
+    "الشعار" : " https://telegra.ph/file/c0e014ff34f34d1056627.png " ،
+    "الكلمات الرئيسية" : [
+    " python3 " ،
+    " برقية " ،
+    " بوت " ،
+    " يوكي " ،
+    " YukkiMusicBot " ،
+    " telegram-bot " ،
+    " بيروجرام "
+    ] ،
+    "المكدس" : " الحاوية " ،
+    "البيئة" : {
+      "API_ID" : {
+        "الوصف" : " احصل على هذه القيمة من https://my.telegram.org " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "API_HASH" : {
+        "الوصف" : " احصل على هذه القيمة من https://my.telegram.org " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "AUTO_LEAVING_ASSISTANT" : {
+        "description" : " إذا كنت تريد أن يغادر مساعدك جميع الدردشات تلقائيًا بعد مرور بعض الوقت. " ،
+        "القيمة" : " صواب " ،
+        "مطلوب" : خطأ
+      } ،
+      "BOT_TOKEN" : {
+        "description" : " A Bot's token from Botfather " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      MONGO_DB_URI : {
+        "description" : " احصل على عنوان url mongodb من https://cloud.mongodb.com. يمكنك تركه فارغًا إذا أردت ، سيستخدم قاعدة بيانات Yukki نيابة عنك. " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "MUSIC_BOT_NAME" : {
+        "description" : " اسم برنامج Music Bot الخاص بك. يُرجى عدم استخدام أحرف ascii " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "OWNER_ID" : {
+        "الوصف" : " معرف (معرفات) المستخدم (المستخدمين) الذي ترغب في إضافته كمالك. يجب فصل القيم المتعددة بمسافة. " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "STRING_SESSION" : {
+        "description" : " جلسة سلسلة Pyrogram. مساعد واحد إلزامي. " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "HEROKU_API_KEY" : {
+        "الوصف" : " مفتاح واجهة برمجة تطبيقات حساب Heroku الخاص بك " ،
+        "القيمة" : " " ،
+        "مطلوب" : خطأ
+      } ،
+      "HEROKU_APP_NAME" : {
+        "الوصف" : " اسم برنامج / تطبيق heroku الخاص بك " ،
+        "القيمة" : " " ،
+        "مطلوب" : خطأ
+      } ،
+      "LOG_GROUP_ID" : {
+        "description" : " معرف مجموعة السجل الخاص بك ، أضف الروبوت الخاص بك وقم بالترقية كمسؤول يتمتع بكامل الحقوق !. استخدم المجموعة فقط. من فضلك لا تستخدم معرف القناة. " ،
+        "القيمة" : " " ،
+        "مطلوب" : صحيح
+      } ،
+      "UPSTREAM_REPO" : {
+        "الوصف" : " إذا كنت لا تعرف هذا ، فاتركه كما هو " ،
+        "القيمة" : " https://github.com/tepthonsource/Rsex " ،
+        "مطلوب" : صحيح
+      } ،
+      "UPSTREAM_BRANCH" : {
+        "الوصف" : " اسم فرع Upstream Repo's " ،
+        "القيمة" : " رئيسي " ،
+        "مطلوب" : صحيح
       }
-    },
-    "buildpacks": [
+    } ،
+    "حزم بناء" : [
           {
-              "url": "heroku/python"
-          },
+              "url" : " heroku / python "
+          } ،
           {
-              "url": "heroku/nodejs"
-          },
+              "url" : " heroku / nodejs "
+          } ،
           {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+              "url" : " https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git "
           }
-      ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "Eco"
+      ] ،
+      "تشكيل" : {
+          "عامل" : {
+              "عدد كبير" : 1 ،
+              "الحجم" : " ايكو "
           }
       }
   }
