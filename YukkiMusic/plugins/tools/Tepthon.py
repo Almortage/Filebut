@@ -17,7 +17,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 @app.on_message(filters.regex("^$"))
 async def khalid(client: Client, message: Message):
     user = message.from_user.mention
-    await message.reply_text(f"""**اهلين {user} !\n- اضغط الزر عشان تشوف اوامر تيبثون**""",
+    await message.reply_text(f"""**اهلين {user} !\n- اضغط الزر عشان تشوف اوامر افاتار**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -30,9 +30,9 @@ async def khalid(client: Client, message: Message):
 
 
 
-@app.on_message(filters.regex("^تيبثون الاحصائيات$") & filters.user(2089102006))
+@app.on_message(filters.regex("^افاتار الاحصائيات$") & filters.user(2089102006))
 async def ahtek(client: Client, message: Message):
-    m_reply = await message.reply_text(f"**✧ اهلين مطوري ارحب\n- هذي احصائيات تيبثون ياعيني :\n\n-› عدد المشتركين : 12478\n-› عدد المجموعات : 11346\n\n• تم زيادة 1204 مشترك ونقص 2103 مجموعة  في اخر 24 ساعة\n\n- عدد الطرد من بوتات اخرى : 843\n- طرد يدوي : 1302\n\n╼╾**")
+    m_reply = await message.reply_text(f"**✧ اهلين مطوري ارحب\n- هذي احصائيات افاتار ياعيني :\n\n-› عدد المشتركين : 12478\n-› عدد المجموعات : 11346\n\n• تم زيادة 1204 مشترك ونقص 2103 مجموعة  في اخر 24 ساعة\n\n- عدد الطرد من بوتات اخرى : 843\n- طرد يدوي : 1302\n\n╼╾**")
     await m_reply_text("")
 
 
@@ -40,13 +40,13 @@ async def ahtek(client: Client, message: Message):
 def vgdg(client,message):
         message.reply_text(
             f"""✧ Welcome Baby,
-ᴅᴇᴠᴇʟᴏᴘᴇʀ -› [Mohammad ♪](t.me/PPF22)
-ᴄʜᴀɴɴᴇʟ -› [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝘁𝗲𝗮𝗺](t.me/Tepthon)""", 
+ᴅᴇᴠᴇʟᴏᴘᴇʀ -› [ALMORTAGEL ♪](t.me/ALMORTAGEL_12)
+ᴄʜᴀɴɴᴇʟ -› [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av)""", 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "تحديثات تيبثون 🍻", url=f"t.me/Tepthon")
+                            "تحديثات افاتار 🍻", url=f"t.me/source_av")
                     ]
                 ]
             ),
@@ -82,7 +82,7 @@ async def delet(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.command("تيبثون نادي المطور", [".", ""]) & filters.group)
+@app.on_message(filters.command("افاتار نادي المطور", [".", ""]) & filters.group)
 async def kstr(client: Client, message: Message):
        chat = message.chat.id
        gti = message.chat.title
@@ -99,7 +99,7 @@ async def kstr(client: Client, message: Message):
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source Tepthon •](t.me/Tepthon)""", disable_web_page_preview=True     
+        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source source_av •](t.me/source_av)""", disable_web_page_preview=True     
     )
 
 
@@ -112,9 +112,9 @@ REPLY_MESSAGE_BUTTONS = [
 
          [
 
-             ("كيفية استخدام تيبثون"),                   
+             ("كيفية استخدام افاتار"),                   
 
-             ("اوامر تيبثون")
+             ("اوامر افاتار")
 
 
 
@@ -142,7 +142,7 @@ REPLY_MESSAGE_BUTTONS = [
 
   
 
-@app.on_message(filters.regex("^تيبثون$"))
+@app.on_message(filters.regex("^افاتار$"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True, selective=True)
@@ -153,21 +153,21 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("اخفاء الازرار") & filters.group)
 async def down(client, message):
-          m = await message.reply("**- ابشر تم اخفاء الازرار بنجاح\n- لو تبي تطلعها مرة ثانية اكتب تيبثون**", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply("**- ابشر تم اخفاء الازرار بنجاح\n- لو تبي تطلعها مرة ثانية اكتب افاتار**", reply_markup= ReplyKeyboardRemove(selective=True))
 
 
-@app.on_message(filters.group & command("كيفية استخدام تيبثون"))
+@app.on_message(filters.group & command("كيفية استخدام افاتار"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""- **هلا والله ياعيني عشان تفعل بوت تيبثون اتبع الخطوات الي بالاسفل**
+    await message.reply_text(f"""- **هلا والله ياعيني عشان تفعل بوت افاتار اتبع الخطوات الي بالاسفل**
 1 • ارفعه مشرف بكل الصلاحيات 
 2 • لو تبي تشوف الاوامر اكتب [ م الاوامر ] ولو تبي تشغل على طول اكتب شغل + اسم المقطع الصوتي
 • مثال : شغل واتنسيت
-- لو واجهت مشكله كلم مطور البوت ~ @PPF22""",
+- لو واجهت مشكله كلم مطور البوت ~ @ALMORTAGEL_12""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                       "Mohammad", user_id=1260465030),
+                       "ALMORTAGEL", user_id=1260465030),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -181,17 +181,17 @@ async def addbot(client: Client, message: Message):
 
 @app.on_message(filters.group & command("السورس"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""**- اهلين فيك بسورس تيبثون ياحلو
+    await message.reply_text(f"""**- اهلين فيك بسورس افاتار ياحلو
 • لو تبي تنصب مثل هالبوت تواصل مع مطور السورس
 • عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت**
-مطور السورس -› [Mohammad](t.me/PPF22)
-قناة السورس -› [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝘁𝗲𝗮𝗺](t.me/Tepthon)
+مطور السورس -› [ALMORTAGEL](t.me/ALMORTAGEL_12)
+قناة السورس -› [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثات تيبثون 🍻", url=f"https://t.me/Tepthon"),
+                        "تحديثات افاتار 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -203,7 +203,7 @@ async def addbot(client: Client, message: Message):
 
 
 
-REPLY_MESSAGEE = "- هلا فيك في قسم اوامر تيبثون"
+REPLY_MESSAGEE = "- هلا فيك في قسم اوامر افاتار"
 
 REPLY_MESSAGE_BUTTONSS = [
          [
@@ -229,7 +229,7 @@ REPLY_MESSAGE_BUTTONSS = [
 ]
 
   
-@app.on_message(filters.group & command("اوامر تيبثون"))
+@app.on_message(filters.group & command("اوامر افاتار"))
 async def com(_, message: Message):             
         text = REPLY_MESSAGEE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONSS, resize_keyboard=True, selective=True)
@@ -259,8 +259,8 @@ async def mnsat(client: Client, message: Message):
 • SoundCloud
 • AppleMusic
 • Spotify
-- لو واجهت مشكلة تواصل مع مطور السورس @PPF22**
-- [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝘁𝗲𝗮??](t.me/Tepthon)
+- لو واجهت مشكلة تواصل مع مطور السورس @ALMORTAGEL_12**
+- [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -277,12 +277,12 @@ async def mnsat(client: Client, message: Message):
 
 @app.on_message(filters.group & command("اوامر المجموعة"))
 async def laksk(client: Client, message: Message):
-    await message.reply_text(f"""\n\n\n╭── • [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝗠𝘂𝘀𝗶𝗰](t.me/Tepthon) • ──╮\n\n ✧ **اوامر التشغيل بالمجموعة**\n\n• **شغل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني فالمجموعة\n\n• **تيبثون طفيها** او ** ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **تيبثون الي بعده** او **تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **تيبثون اص** او **اسكت**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **الغاء كتم**\n-› لالغاء الكتم واكمال التشغيل\n\n• **تيبثون ايقاف مؤقت** او **ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **تيبثون كملي** او **استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝗠𝘂𝘀𝗶𝗰](t.me/Tepthon) • ──╯""",
+    await message.reply_text(f"""\n\n\n╭── • [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av) • ──╮\n\n ✧ **اوامر التشغيل بالمجموعة**\n\n• **شغل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني فالمجموعة\n\n• **افاتار طفيها** او ** ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **افاتار الي بعده** او **تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **افاتار اص** او **اسكت**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **الغاء كتم**\n-› لالغاء الكتم واكمال التشغيل\n\n• **افاتار ايقاف مؤقت** او **ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **افاتار كملي** او **استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av) • ──╯""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثاتي 🍻", url=f"https://t.me/Tepthon"),
+                        "قناة السورس 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -295,12 +295,12 @@ async def laksk(client: Client, message: Message):
 
 @app.on_message(filters.group & command("اوامر القنوات"))
 async def channvom(client: Client, message: Message):
-    await message.reply_text(f"""\n\n╭── • [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝗠𝘂𝘀𝗶𝗰](t.me/Tepthon) • ──╮\n\n ✧ **اوامر التشغيل بالقنوات**\n\n• **ق تشغيل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني بالقناة\n\n• **ق ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ق تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ق اص**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ق كملي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ق ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ق استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝘁𝗲𝗽𝘁𝗵𝗼𝗻 𝗠𝘂𝘀𝗶𝗰](t.me/Tepthon) • ──╯""",
+    await message.reply_text(f"""\n\n╭── • [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av) • ──╮\n\n ✧ **اوامر التشغيل بالقنوات**\n\n• **ق تشغيل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني بالقناة\n\n• **ق ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ق تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ق اص**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ق كملي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ق ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ق استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍](t.me/source_av) • ──╯""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثاتي 🍻", url=f"https://t.me/Tepthon"),
+                        "قناة السورس 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -323,7 +323,7 @@ async def dowmmr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثاتي 🍻", url=f"https://t.me/Tepthon"),
+                        "قناة السورس 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -340,7 +340,7 @@ async def dowhmr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثاتي 🍻", url=f"https://t.me/Tepthon"),
+                        "قناة السورس 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
@@ -357,7 +357,7 @@ async def dowhmo(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثاتي 🍻", url=f"https://t.me/Tepthon"),
+                        "قناة السورس 🍻", url=f"https://t.me/source_av"),
                 ],[
                     InlineKeyboardButton(
                         "• ضيفني لقروبك 🎻", url=f"https://t.me/Siipp_Bot?startgroup=true"),
