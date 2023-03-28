@@ -1,5 +1,5 @@
 {
-    "name": "VAMBIR/MUSIC",
+    "name": "𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://telegra.ph/file/e70a5c7bbce858cee91ac.jpg",
     "keywords": [
@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "حط هنا الايبي ايدي",
-        "value": "10729094",
+        "value": "15598301",
         "required": true
       },
       "API_HASH": {
         "description": "حط هنا الايبي هاش",
-        "value": "038b0b405782d91cbb32f60e917c1c6e",
+        "value": "608b39b53ea085ed9f3ef7f01d9e56cd",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -40,47 +40,47 @@
       },  
       "BOT_USERNAME": {
         "description": "حط هنا يوزر البوت بدون @ ينجم .",
-        "value": "VPllllllbot",
+        "value": "Almortagel_music_bot",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "حط هنا كود المونجو .",
-        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
+        "value": "mongodb+srv://bot_ ALMoRTAGEL:Al2552001@cluster0.heabj.mongodb.net/ ALMoRTAGEL_bot?retryWrites=true&w=majority",
         "required": false
       },
       "MUSIC_BOT_NAME": {
-        "description": "حط اسم البوت انجلش كابيتال زيي - VAMBIR.",
-        "value": "VAMBIR",
+        "description": "حط اسم البوت انجلش كابيتال زيي - Almortagel_music.",
+        "value": " Almortagel_music",
         "required": true
       },
       "NAME_BOT": {
-        "description": "حط اسم البوت ب العربي زي فمبير .",
-        "value": "فمبير",
+        "description": "حط اسم البوت ب العربي زي ميوزك افاتار .",
+        "value": "ميوزك افاتار",
         "required": true
       },
       "OWNER": {
         "description": "حط هنا يوزر المطور منغير علامه @ .",
-        "value": "XxlllllllllllllllllllllllllllxX",
+        "value": "ALMORTAGEL_12",
         "required": true
       },
       "OWNER_USER": {
         "description": "حط هنا يوزر المطور بعلامه @ .",
-        "value": "@XxlllllllllllllllllllllllllllxX",
+        "value": "@ALMORTAGEL_12",
         "required": true
       },
       "OWNER_ID": {
         "description": "حط هنا ايدي المطور ينجم .",
-        "value": "2093265110",
+        "value": "5089553588",
         "required": true
       },
       "IMG_DEV1": {
         "description": "حط لينك صورة المطور ينجم .",
-        "value": "https://telegra.ph/file/e70a5c7bbce858cee91ac.jpg",
+        "value": "https://telegra.ph/file/14c7948ad180050fe16e4.jpg",
         "required": true
       },
       "IMG_BOT1": {
         "description": "حط لينك صورة البوت ينجم .",
-        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "value": "https://telegra.ph/file/58c6c4181c1feda4f2110.jpg",
         "required": true
       },
       "STRING_SESSION": {
@@ -100,17 +100,17 @@
       },
       "LOG_GROUP_ID": {
         "description": "حط ايدي جروب البوتات وارفع البوت والحساب المساعد مشرف الاول .",
-        "value": "-1001615880226",
+        "value": "-1001622606659",
         "required": true
       },
       "START_IMG_URL": {
         "description": "Telegraph Image URL For Start Command",
-        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "value": "https://telegra.ph/file/6b5f18c07143327344dd2.jpg",
         "required": true
       },      
       "UPSTREAM_REPO": {
         "description": "سيبها زي مهيا .",
-        "value": "https://github.com/VamBIR/end",
+        "value": " https://github.com/Almortage/Filebut",
         "required": true
       },
       "UPSTREAM_BRANCH": {
