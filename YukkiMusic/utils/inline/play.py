@@ -8,7 +8,7 @@
 # All rights reserved.
 
 import random
-from config import YAFA_CHANNEL, YAFA_NAME
+from config import AVATAR_CHANNEL, AVATAR_NAME
 from pyrogram.types import InlineKeyboardButton
 
 selections = [
@@ -57,7 +57,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"{YAFA_NAME}", url=f"{YAFA_CHANNEL}"
+                text=f"{AVATAR_NAME}", url=f"{AVATAR_CHANNEL}"
             )
         ],
     ]
