@@ -8,7 +8,7 @@
 # All rights reserved.
 
 import random
-from config import AVATAR_CHANNEL, AVATAR_NAME
+
 from pyrogram.types import InlineKeyboardButton
 
 selections = [
@@ -43,22 +43,21 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/source_av"
+            ),
         ],
+        [    
+            InlineKeyboardButton(
+                text=_["PL_B_13"], url=f"https://t.me/ALMORTAGEL_12"
+            ),
+        ],        
         [
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{AVATAR_NAME}", url=f"{AVATAR_CHANNEL}"
-            )
+                text=_["PL_B_3"], url=f"https://t.me/Almortagel_music_bot?startgroup=true",
+            ),
         ],
     ]
     return buttons
@@ -94,17 +93,21 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
+                text=_["PL_B_12"], url=f"https://t.me/source_av"
             ),
-        ],
+        ],        
+        [    
+            InlineKeyboardButton(
+                text=_["PL_B_13"], url=f"https://t.me/ALMORTAGEL_12"
+            ),
+        ],        
         [
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
+                text=_["PL_B_3"], url=f"https://t.me/Almortagel_music_bot?startgroup=true",
+            ),
         ],
     ]
     return buttons
@@ -114,11 +117,11 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["PL_B_2"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+                text=_["PL_B_3"], url=f"https://t.me/Almortagel_music_bot?startgroup=true",
             ),
         ],
     ]
@@ -139,6 +142,16 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/source_av"
+            ),
+        ],
+        [    
+            InlineKeyboardButton(
+                text=_["PL_B_13"], url=f"https://t.me/ALMORTAGEL_12"
+            ),            
         ],
         [
             InlineKeyboardButton(
@@ -234,32 +247,32 @@ def panel_markup_1(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="توقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="⏸ وقف", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="استئناف",
+                text="▶️ كمل",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="⏯ تخطي", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="انهاء", callback_data=f"ADMIN Stop|{chat_id}"
+                text="⏹ ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="◀️",
+                text="◀️السابق",
                 callback_data=f"Pages Back|0|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="رجوع",
+                text="🔙 رجوع",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="▶️",
+                text="▶التالي️",
                 callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
             ),
         ],
@@ -271,33 +284,33 @@ def panel_markup_2(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="كتم", callback_data=f"ADMIN Mute|{chat_id}"
+                text="🔇 كتم", callback_data=f"ADMIN Mute|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="الغاء كتم",
+                text="🔊 الغاءالكتم",
                 callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="خلط",
+                text="🔀 عشوائي",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="تكرار", callback_data=f"ADMIN Loop|{chat_id}"
+                text="🔁 ترتيب", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="◀️",
+                text="◀السابق️",
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="رجوع",
+                text="🔙 رجوع",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="▶️",
+                text="▶التالي️",
                 callback_data=f"Pages Forw|1|{videoid}|{chat_id}",
             ),
         ],
@@ -309,35 +322,35 @@ def panel_markup_3(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ارجاع 10ث",
+                text="⏮ رجوع10ثواني",
                 callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="تقديم 10ث",
+                text="⏭ تقدم10ثواني",
                 callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="ارجاع 30ث",
+                text="⏮ رجوع30ثانيه",
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="تقديم 30ث",
+                text="⏭ تقدم30ثانيه",
                 callback_data=f"ADMIN 4|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="◀️",
+                text="◀السابق️",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="رجوع",
+                text="🔙 رجوع",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="▶️",
+                text="▶التالي️",
                 callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
             ),
         ],
